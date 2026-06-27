@@ -1,0 +1,4 @@
+# Keep shell scripts and Nginx config LF-only so they run on the Linux VPS
+# regardless of the committer's platform (CRLF breaks bash/nginx).
+*.sh            text eol=lf
+deploy/*.conf   text eol=lf
