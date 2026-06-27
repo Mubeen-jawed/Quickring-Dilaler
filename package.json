@@ -1,0 +1,16 @@
+{
+  "name": "krisp-call-dialer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npx vite --host",
+    "build": "cd client && npx vite build",
+    "db:setup": "cd server && node db/setup.js",
+    "start": "cd server && NODE_ENV=production node index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
